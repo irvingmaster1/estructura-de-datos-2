@@ -1,0 +1,725 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #142546, #042434);
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+
+}
+.by{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 80vh;
+}
+
+.redes, a.github{
+    text-decoration: none;
+    color: #fff;
+    margin:  20px 50px;
+    margin-left: 80vh;
+}
+
+
+.tab, .tabc, .tabble, .tablde, .tabec, .tabdec {
+    margin-top:10vh;
+    margin-left: 25%;
+    height:100%;
+    width:  50%;
+    color:black;
+    background-color: white;
+    align-content: center;
+    text-align: center;
+}
+.content{
+    text-align:center;
+    align-content: center;
+}
+
+.header{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;left: 0;
+}
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+.container .btn-menu, .logo{
+    float: left;
+    line-height:100px;
+}
+.container .btn-menu label{
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.nav{
+    width: 300px;
+}
+
+.nav__link{
+    color: rgba(255, 255, 255, 0.637);
+    display: block;
+    padding: 15px 0;
+    text-decoration: none;
+}
+
+.nav__link--inside{
+    border-radius: 6px ;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.nav__link--inside:hover{
+    background: #0000002d;
+}
+
+.list{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0 16px 16px 0;
+    background: rgba(0, 5, 10, 0.692);
+    
+    
+}
+
+.list__item{
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.list__item--click{
+    cursor: pointer;
+}
+
+.list__button{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.arrow .list__arrow{
+    transform: rotate(90deg);
+}
+
+.list__arrow{
+    margin-left: auto;
+    transition: transform .3s;
+}
+
+.list__show{
+    width: 80%;
+    margin-left: auto;
+    border-left: 2px solid #ffffff;
+    list-style: none;
+    transition: height .4s;
+    height: 0;
+}
+
+input{
+    border: none;
+    outline: none;
+    background: none;
+    color: rgb(228, 218, 218);
+    font-size: 18px;
+    width: 82%;
+    margin: 0 10px;
+  }
+
+.Pila{
+    border: none;
+    outline: none;
+    background: none;
+    color: purple;
+    font-size: 18px;
+    width: 80%;
+    margin: 0 10px;
+}
+
+select{
+    border: none;
+    outline: none;
+    background: none;
+    color: rgb(255, 0, 98);
+    font-size: 18px;
+    width: 80%;
+    margin: 0 10px;
+}
+
+button{
+  width: 50%;
+  backdrop-filter: blur(10px);
+  border: 1px solid black;
+  color: rgb(15, 10, 15);
+  padding: 3px;
+  font-size: 15px;
+  cursor: pointer;
+  margin: 12px 0;
+  border-radius: 10px;
+  background-color: rgb(255, 0, 98);
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+button:hover{
+    background-color: red;
+    opacity: 0.8;
+}
+
+.cont-menu label{
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/*main.css*/
+.header{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;left: 0;
+}
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+.container .btn-menu, .logo{
+    float: left;
+    line-height:100px;
+}
+.container .btn-menu, label{
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+.logo h1{
+    color: #fff;
+    font-weight: 400;
+    font-size: 22px;
+    margin-left: 10px;
+}
+.container .menu{
+    float: right;
+    line-height: 100px;
+}
+.container .menu a{
+    display: inline-block;
+    padding: 15px;
+    line-height: normal;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+    font-size: 15px;
+    margin-right: 5px;
+}
+.container .menu a:hover{
+    border-bottom: 2px solid #c7c7c7;
+    padding-bottom: 5px;
+}
+/*Fin de Estilos para el encabezado*/
+
+/*Menù lateral*/
+#btn-menu{
+    display: none;
+}
+.container-menu{
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100vh;
+    top: 0;left: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+#btn-menu:checked ~ .container-menu{
+    opacity: 1;
+    visibility: visible;
+}
+.cont-menu{
+    width: 100%;
+    max-width: 250px;
+    background: #F6F8FA;
+    height: 100vh;
+    position: relative;
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+}
+#btn-menu:checked ~ .container-menu .cont-menu{
+    transform: translateX(0%);
+}
+.cont-menu nav{
+    transform: translateY(15%);
+}
+.cont-menu nav a{
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #c7c7c7;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+}
+.cont-menu nav a:hover{
+    border-left: 5px solid #c7c7c7;
+    background: #1f1f1f;
+}
+.cont-menu label{
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+option{
+    background: #1f1f1f;
+    border: none;
+    outline: none;
+    
+}
+
+label.x{
+    background-color: rgb(255, 0, 98);
+    left: 5px;
+}
+.btn-menu1{
+    margin-left: 10vh;
+    height: 20px;
+    
+}
+.btn-menu2{
+    font-size: 10px;
+}
+
+h5{
+    color: rgba(255, 255, 255, 0.692);
+}
+                                            /*Responsive*/
+
+                                            /*celular*/
+  @media screen and (max-width: 400px){
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #142546);
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+}
+
+.by{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 80vh;
+}
+
+.redes, a.github{
+    text-decoration: none;
+    color: #fff;
+    margin:  20px 50px;
+    margin-left: 80vh;
+}
+
+.header{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;left: 0;
+}
+.container{
+    width: 100%;
+    
+    margin: auto;
+}
+.container .btn-menu, .logo{
+    float: left;
+    line-height:100px;
+}
+.container .btn-menu label{
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.nav{
+    width: 300px;
+}
+
+.nav__link{
+    color: rgba(255, 255, 255, 0.637);
+    display: block;
+    padding: 15px 0;
+    text-decoration: none;
+}
+
+.nav__link--inside{
+    border-radius: 6px ;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.nav__link--inside:hover{
+    background: #0000002d;
+}
+
+.list{
+    width: 320%;
+    
+    max-width: 240%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0 16px 16px 0;
+    background: rgba(0, 5, 10, 0.692);
+    
+    
+}
+
+.list__item{
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.list__item--click{
+    cursor: pointer;
+}
+
+.list__button{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.arrow .list__arrow{
+    transform: rotate(90deg);
+}
+
+.list__arrow{
+    margin-left: auto;
+    transition: transform .3s;
+}
+
+.list__show{
+    width: 100%;
+    margin-left: auto;
+    border-left: 2px solid #ffffff;
+    list-style: none;
+    transition: height .4s;
+    height: 0;
+}
+
+input{
+    border: none;
+    outline: none;
+    background: none;
+    color: rgb(228, 218, 218);
+    font-size: 18px;
+    width: 82%;
+    margin: 0 10px;
+  }
+
+.Pila{
+    border: none;
+    outline: none;
+    background: none;
+    color: purple;
+    font-size: 18px;
+    width: 80%;
+    margin: 0 10px;
+}
+
+select{
+    border: none;
+    outline: none;
+    background: none;
+    color: rgb(255, 0, 98);
+    font-size: 18px;
+    width: 80%;
+    margin: 0 10px;
+}
+
+button{
+  width: 50%;
+  backdrop-filter: blur(10px);
+  border: 1px solid black;
+  color: rgb(15, 10, 15);
+  padding: 3px;
+  font-size: 15px;
+  cursor: pointer;
+  margin: 12px 0;
+  border-radius: 10px;
+  background-color: rgb(255, 0, 98);
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+button:hover{
+    background-color: red;
+    opacity: 0.8;
+}
+
+.cont-menu label{
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/*main.css*/
+.header{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;left: 0;
+}
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+.container .btn-menu, .logo{
+    float: left;
+    line-height:100px;
+}
+.container .btn-menu, label{
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+.logo h1{
+    color: #fff;
+    font-weight: 400;
+    font-size: 22px;
+    margin-left: 32vh;
+}
+.container .menu{
+    float: right;
+    line-height: 100px;
+}
+.container .menu a{
+    display: inline-block;
+    padding: 15px;
+    line-height: normal;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+    font-size: 15px;
+    margin-right: 5px;
+}
+.container .menu a:hover{
+    border-bottom: 2px solid #c7c7c7;
+    padding-bottom: 5px;
+}
+/*Fin de Estilos para el encabezado*/
+
+/*Menù lateral*/
+#btn-menu{
+    display: none;
+}
+.container-menu{
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100vh;
+    top: 0;left: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+#btn-menu:checked ~ .container-menu{
+    opacity: 1;
+    visibility: visible;
+}
+.cont-menu{
+    width: 100%;
+    max-width: 250px;
+    background: #F6F8FA;
+    height: 100vh;
+    position: relative;
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+}
+#btn-menu:checked ~ .container-menu .cont-menu{
+    transform: translateX(0%);
+}
+.cont-menu nav{
+    transform: translateY(15%);
+}
+.cont-menu nav a{
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #c7c7c7;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+}
+.cont-menu nav a:hover{
+    border-left: 5px solid #c7c7c7;
+    background: #1f1f1f;
+}
+.cont-menu label{
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+option{
+    background: #1f1f1f;
+    border: none;
+    outline: none;
+    
+}
+
+label.x{
+    background-color: rgb(255, 0, 98);
+    left: 5px;
+}
+.btn-menu1{
+    margin-left: 10vh;
+    height: 20px;
+    
+}
+.btn-menu2{
+    font-size: 10px;
+}
+
+h5{
+    color: rgba(255, 255, 255, 0.692);
+}
+  }
+
+
+                          
+
+                                                /*ipad en adelante*/
+  @media screen and (max-width: 768px){
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #142546);
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+}
+
+.by{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 80vh;
+}
+
+.redes, a.github{
+    text-decoration: none;
+    color: #fff;
+    margin:  20px 50px;
+    margin-left: -80vh;
+}
+
+.header{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;left: 0;
+}
+.container{
+    width: 800%;
+    
+    margin: auto;
+}
+.container .btn-menu, .logo{
+    float: left;
+    line-height:100px;
+}
+.container .btn-menu label{
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.nav{
+    width: 300px;
+}
+
+.nav__link{
+    color: rgba(255, 255, 255, 0.637);
+    display: block;
+    padding: 15px 0;
+    text-decoration: none;
+}
+
+.nav__link--inside{
+    border-radius: 6px ;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.nav__link--inside:hover{
+    background: #0000002d;
+}
+
+.list{
+    width: 757px;
+    margin-left: vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0 16px 16px 0;
+    background: rgba(0, 5, 10, 0.692);
+}
+
+.list__show{
+    width: 100%;
+    margin-left: auto;
+    border-left: 2px solid #ffffff;
+    list-style: none;
+    transition: height .4s;
+    height: 0;
+}
+
+.logo h1{
+    color: #fff;
+    font-weight: 400;
+    font-size: 22px;
+    margin-left: 1vh;
+}
+
+  }

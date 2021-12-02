@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen</title>
+    <link rel="stylesheet" href="estilos.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+
+</head>
+<body>
+    <header class="header">
+		<div class="container">
+		    <div class="btn-menu">
+			    <label for="btn-menu">☰</label>
+		    </div>
+			<div class="logo">
+				<h1>Estructura de Datos</h1>
+			</div>
+		</div>
+        
+        <!-- <div class="redes">
+            <p class="by">Creado por:</p>
+            <a href="https://github.com/NassimLimones78/Estructura-de-datos" class="github"><i class="fab fa-github"></i>    Nassim</a>
+            <a href="https://github.com/irvingmaster1/estructura-de-datos-2" class="github"><i class="fab fa-github"></i>    Irving</a>
+        </div> -->
+	</header>
+    
+<input type="checkbox" id="btn-menu">
+    <div class="container-menu">
+        
+        <nav class="nav">
+            
+            <ul class="list">
+                <div class="btn-menu1">
+                    <label for="btn-menu"><h5>Cerrar Menú</h5></label>
+                    
+                </div>
+                    
+                    <li class="list__item list__item--click" id="tpila" >
+                <div class="list__button list__button--click" >
+                    <img src="assets/docs.svg" class="list__img">
+                    <a href="#" class="nav__link">Pila</a>
+                    <img src="assets/arrow.svg" class="list__arrow">
+                </div>
+                <ul class="list__show">
+                    <li class="list__inside">
+                        <input type="number" id="datop" class="nav__link nav__link--inside" required placeholder="Dato">
+                    </li>
+
+                    <li class="list__inside">
+                        <a href="#" class="nav__link nav__link--inside">
+                        <label for="Pila">				
+                            
+                            <select name="" id="pila1">
+                                <option  id="push">push</option>
+                                <option id="pop">pop</option>
+                                <option id="peek">peek</option>
+                                <option id="size">size</option>
+                            </select>	
+                        </label>
+                        </a>
+                    </li>
+                        
+                        
+                    <li class="list__inside">
+                        <button id="insertp" class="Insertar" >Insertar</button>
+                    </li>
+                </ul>
+            </li>
+
+               
+                    <th></th>
+                </table>
+            <li class="list__item list__item--click "id="tcola" >
+                <div class="list__button list__button--click " >
+                    <img src="assets/docs.svg" class="list__img">
+                    <a href="#" class="nav__link">Cola</a>
+                    <img src="assets/arrow.svg" class="list__arrow">
+                </div>
+            
+                <ul class="list__show">
+                    <li class="list__inside">
+                        <input type="number" id="datoc" class="nav__link nav__link--inside" required placeholder="Dato">
+                    </li>
+
+                    <li class="list__inside">
+                        <a href="#" class="nav__link nav__link--inside"><label for="Cola">				
+                            <select name="" id="cola1">
+                                <option id="enqueue">enqueue</option>
+                                <option id="dequeue">dequeue</option>
+                                <option id="peek">peek</option>
+                                <option id="size">size</option>
+                                <option id="isEmpty">isEmpty</option>
+                            </select>	
+                        </label></a>
+                    </li>
+
+                    <li class="list__inside">
+                        <button id="insertc" class="Insertar" >Insertar</button>
+                    </li>
+                </ul>
+            </li>
+
+
+            <li class="list__item list__item--click" id="tlistenl">
+                <div class="list__button list__button--click ">
+                    <img src="assets/docs.svg" class="list__img">
+                    <a href="#" class="nav__link">Lista Enlazada</a>
+                    <img src="assets/arrow.svg" class="list__arrow">
+                </div>
+            
+                <ul class="list__show">
+                    <li class="list__inside">
+                        <input type="number" id="datole" class="nav__link nav__link--inside" required placeholder="Dato">
+                        <input type="number" id="indexle" class="nav__link nav__link--inside" required placeholder="Indice">
+                    </li>
+
+                    <li class="list__inside">
+                        <a href="#" class="nav__link nav__link--inside"><label for="Lista Enlazada">				
+                            <select name="" id="listaenlazada1">
+                                <option  id="insertBefore">insertBefore</option>
+                                <option  id="insertAfter">insertAfter</option>
+                                <option  id="insertAt">insertAt</option>
+                                <option  id="removeFirst">removeFirst</option>
+                                <option  id="removeLast">removeLast</option>
+                                <option  id="removeData">removeData</option>
+                                <option  id="removeFrom">removeFrom</option>
+                                <option  id="removeList">removeList</option>
+                                <option  id="isEmpty">isEmpty</option>
+                                <option  id="getSize">getSize</option>
+                            </select>	
+                        </label></a>
+                    </li>
+
+                    <li class="list__inside">
+                        <button id="insertle" class="Insertar">Insertar</button>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="list__item list__item--click" id="tlde">
+                <div class="list__button list__button--click tlde">
+                    <img src="assets/docs.svg" class="list__img">
+                    <a href="#" class="nav__link">Lista Doblemente Enlazada</a>
+                    <img src="assets/arrow.svg" class="list__arrow">
+                </div>
+            
+                <ul class="list__show">
+                    <li class="list__inside">
+                        <input type="number" id="datolde" class="nav__link nav__link--inside" required placeholder="Dato">
+                        <input type="number" id="indexlde" class="nav__link nav__link--inside" required placeholder="Indice">
+                    </li>
+
+                    <li class="list__inside">
+                        <a href="#" class="nav__link nav__link--inside"><label for="Lista Doblemente Enlazada">				
+                            <select name="" id="selectlde">
+                                <option  id="insertFirst">insertFirst</option>
+                                <option  id="insertLast">insertLast</option>
+                                <option  id="insertAt">insertAt</option>
+                                <option  id="removeFirst">removeFirst</option>
+                                <option  id="removeLast">removeLast</option>
+                                <option  id="removeData">removeData</option>
+                                <option  id="removeFrom">removeFrom</option>
+                                <option  id="reversePrint">reversePrint</option>
+                                <option  id="getSize">getSize</option>
+                                <option  id="isEmpty">isEmpty</option>
+                            </select>	
+                        </label></a>
+                    </li>
+
+                    <li class="list__inside">
+                        <button id="insertlde" class="Insertar">Insertar</button>
+                    </li>
+                </ul>
+            </li>
+
+
+            <li class="list__item list__item--click" id="tec">
+                <div class="list__button list__button--click tec">
+                    <img src="assets/docs.svg" class="list__img">
+                    <a href="#" class="nav__link">Enlazada Circular</a>
+                    <img src="assets/arrow.svg" class="list__arrow"> 
+                </div>
+            
+                <ul class="list__show">
+                    <li class="list__inside">
+                        <input type="number" id="datoec" class="nav__link nav__link--inside" required placeholder="Dato">
+                        <input type="number" id="indexec" class="nav__link nav__link--inside" required placeholder="Indice">
+                    </li>
+
+                    <li class="list__inside">
+                        <a href="#" class="nav__link nav__link--inside"><label for="Enlazada Circular">				
+                            <select name="" id="selectec">
+                                <option  id="insertFirst">insertFirst</option>
+                                <option  id="insertLast">insertLast</option>
+                                <option  id="insertAt">insertAt</option>
+                                <option  id="removeFirst">removeFirst</option>
+                                <option  id="removeLast">removeLast</option>
+                                <option  id="removeData">removeData</option>
+                                <option  id="removeFrom">removeFrom</option>
+                                <option  id="removeList">removeList</option>
+                                <option  id="getSize">getSize</option>
+                                <option  id="getLast">getLast</option>
+                                <option  id="getFirst">getFirst</option>
+                            </select>	
+                        </label></a>
+                    </li>
+
+                    <li class="list__inside">
+                        <button id="insertec" class="Insertar ">Insertar</button>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="list__item list__item--click" id="tdec">
+                <div class="list__button list__button--click tdec">
+                    <img src="assets/docs.svg" class="list__img">
+                    <a href="#" class="nav__link">Doblemente Enlazada Circular</a>
+                    <img src="assets/arrow.svg" class="list__arrow"> 
+                </div>
+            
+                <ul class="list__show">
+                    <li class="list__inside">
+                        <input type="number" id="datoldec" class="nav__link nav__link--inside" required placeholder="Dato">
+                        <input type="number" id="indexldec" class="nav__link nav__link--inside" required placeholder="Indice">
+                    </li>
+
+                    <li class="list__inside">
+                        <a href="#" class="nav__link nav__link--inside"><label for="Doblemente Enlazada Circular">				
+                            <select name="" id="selectldec">
+                                <option  id="insertFirst">insertFirst</option>
+                                <option id="insertLast">insertLast</option>
+                                <option id="insertAt">insertAt</option>
+                                <option id="removeFirst">removeFirst</option>
+                                <option  id="removeLast">removeLast</option>
+                                <option id="removeData">removeData</option>
+                                <option  id="removeFrom">removeFrom</option>
+                                <option id="removeList">removeList</option>
+                                <option  id="reversePrint">reversePrint</option>
+                                <option  id="getSize">getSize</option>
+                                <option  id="isEmpty">isEmpty</option>
+                            </select>	
+                        </label></a>
+                    </li>
+
+                    <li class="list__inside">
+                        <button id="insertldec" class="Insertar" >Insertar</button>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>   
+    </nav>
+</div>
+
+<div class="tab" style="display: none;">
+<legend><h3>Datos</h3></legend>
+<legend><h4>pila</h4></legend>
+<center>
+    <table class="content">
+        <thead>
+        </thead>
+        <tbody id="pilabdy">
+            
+        </tbody>
+    </table>
+</center>
+</div>
+
+    
+<div class="tabc" style="display: none;">
+    <legend><h3>Datos</h3></legend>
+    <legend><h4>Cola</h4></legend>
+    <center>
+        <table class="content">
+            <thead>
+            </thead>
+            <tbody id="cola">
+                
+            </tbody>
+        </table>
+    </center>
+</div>
+
+        
+<div class="tabble" style="display: none;">
+    <legend><h3>Datos</h3></legend>
+    <legend><h4>Lista Enlazada</h4></legend>
+    <center>
+        <table class="content">
+            <thead>
+            </thead>
+            <tbody id="Lebdy">
+                
+            </tbody>
+        </table>
+    </center>
+</div>
+    
+<div class="tablde" style="display: none;">
+    <legend><h3>Datos</h3></legend>
+    <legend><h4>Lista Doblemente Enlazada</h4></legend>
+    <center>
+        <table class="content">
+            <thead>
+            </thead>
+            <tbody id="ldebdy">
+                
+            </tbody>
+        </table>
+    </center>
+</div>
+    
+
+<div class="tabec" style="display: none;">
+    <legend><h3>Datos</h3></legend>
+    <legend><h4>Enlazada Circular</h4></legend>
+    <center>
+        <table class="content">
+            <thead>
+            </thead>
+            <tbody id="lecbody">
+                
+            </tbody>
+        </table>
+    </center>
+</div>
+<div class="tabdec" style="display: none;">
+    <legend><h3>Datos</h3></legend>
+    <legend><h4>Doblemente Enlazada Circular</h4></legend>
+    <center>
+        <table class="content">
+            <thead>
+            </thead>
+            <tbody id="decbdy">
+                
+            </tbody>
+        </table>
+    </center>
+</div>
+
+<script src="./Elementos_HTML/elementos.js" type="module"></script>
+    <script src="index.js"></script>
+</body>
+</html>
